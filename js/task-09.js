@@ -6,8 +6,9 @@ const elements = {
 elements.button.addEventListener("click", onClick);
 
 function onClick() {
-  elements.body.style.backgroundColor = getRandomHexColor();
-  elements.colorSpan.textContent = getRandomHexColor();
+  let randomColorUp = getRandomHexColor();
+  elements.body.style.backgroundColor = randomColorUp;
+  elements.colorSpan.textContent = randomColorUp;
 }
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
