@@ -9,7 +9,7 @@ function handlarSubmit(evt) {
   if (email.value === "" || password.value === "") {
     alert(`Всі поля повинні бути заповненими`);
   } else {
-    console.log({ Email: email.value, Password: password.value });
+    console.log({ email: email.value, password: password.value });
     form.reset();
   }
 }
